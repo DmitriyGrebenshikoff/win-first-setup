@@ -7,4 +7,4 @@ foreach ($program in $list) {
     choco install $program -y --force
 }
 
-choco install office2019proplus --params '/Language:ru-ru'
+choco install office2019proplus --params '/Language:ru-ru' -y --force
