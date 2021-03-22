@@ -8,7 +8,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability –Online
 
 #install programs from chocolatey
-$list = @("googlechrome","7zip","adobereader","sharex","vlc","git","keepass","vscode","telegram","whatsapp","viber","wsl","wsl-ubuntu-2004","microsoft-teams","filezilla","putty.install","sql-server-management-studio","heidisql","far","microsoft-windows-terminal","winbox","puntoswitcher")
+$list = @("googlechrome","7zip","adobereader","sharex","vlc","git","keepass","vscode","telegram","whatsapp","viber","wsl","wsl-ubuntu-2004","microsoft-teams","filezilla","putty.install","sql-server-management-studio","heidisql","far","microsoft-windows-terminal","winbox","puntoswitcher","wireguard")
 foreach ($program in $list) {
     choco install $program -y --force
 }
